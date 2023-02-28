@@ -60,13 +60,7 @@
 .contain{  margin-left: 55px;}
 
 /*Tutorial by Travis Media*/
-.image-block { 
-transition: all .2s ease-in-out; 
-}
 
-.image-block :hover { 
-transform: scale(1.1); 
-}
 
 .vidtrial{ 
 transition: all .2s ease-in-out; 
@@ -83,7 +77,6 @@ transition: all .2s ease-in-out;
 .imtrial:hover { 
 transform: scale(1.1); 
 }
-
 
 
 .texttrial{ 
@@ -267,6 +260,25 @@ transform: scale(1.1);
       text-overflow: ellipsis;
 }
 
+
+.type{font-family: 'IBM Plex Mono';
+    font-weight: 100;
+    font-size: 12px;
+      padding-left: 10px;
+    padding-bottom: 10px;
+     margin-top: 5px;
+        display: inline-block;
+    float:right;
+}
+.arrow{font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+      padding-left: 10px;
+    padding-bottom: 10px;
+    margin-right: 5px; 
+        display: inline-block;
+    float:right;
+}
 .content{font-family: 'IBM Plex Mono';
     font-weight: 100;
     font-size: 12px;
@@ -419,48 +431,6 @@ padding-top: 10px;
 }
 
 
-/*
-<!--TICKER TAPE PURE CSS TUTORIAL BY LEWIS CAREY ON CODEPEN-->
-*/
-/*
-
-#marquee-cont {
-  background: #f4f4f4;
-
-    position: fixed;
-bottom: 0px;
-    display: block;
-    z-index: 5;
-    width:100%;
-      
-}
-#marquee-cont marquee {
-  margin-top: 5px;
-    
-}
-#marquee-news {
-  
-  background: #1174A8;
-  padding: 5px;
-}
-#ticker-title{
-  border:none;
-  padding:5px 20px;
-  background:#1174A8;
-  color:white;
-    
-}
-#ticker-title:focus{
-  outline:none;
-}
-
-
-*/
-
-
-/*
-<!--TICKER TAPE PURE CSS TUTORIAL BY NICK SANTINI ON CODEPEN-->
-*/
 
 
 
