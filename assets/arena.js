@@ -222,44 +222,6 @@ fetch(`https://api.are.na/v2/channels/${channel}?per=100`, {cache: 'no-store'})
 	.then(data => {
 		setBasics(data)
 		parseBlocks(data)
+		window.arenaCallback?.()
 	})
 
-
-/**/
-
-var newsItem = [
-  {
-   
-    "story": "My desire to travel and explore the world has given me food for thought, which fuels my creativity."
-  },
-  {
-   
-    "story": "My design work has always been influenced by the expanse around me and the ability to curate multiple ideas into a distinct theme."
-  },
-  {
-
-    "story": "It has always piqued my interest to learn about different cultures and meet new people from all over the world."
-  },
-  {
-
-    "story": "Trying new things, sailing unknown seas, and maintaining a persistent spirit of endeavour and learning made me a more empathetic person for tomorrow."
-  },
-  {
-
-    "story": "Through my adventures, I realized that even the smallest change can affect the entire world. "
-  },
-    {
-
-    "story": "While assembling the collection, I realized that it forms a certain pattern that connects different themes together; upon further reflection, the collection creates an experience that reflects my personal travel journey. "
-  }
-];
-
-for (i = 0; i < newsItem.length; i++) {
-  $("#newsTicker p").append(
-   
-    "<span class='story'>" + newsItem[i].story + "</span>"
-  );
-}
-
-
-Resources

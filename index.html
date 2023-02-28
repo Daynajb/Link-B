@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:wght@200&family=IBM+Plex+Sans:wght@200&family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
-
+  <script defer src="assets/main.js"> </script>
     <script defer src="assets/arena.js"> </script>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -35,11 +35,7 @@
             <a href="https://www.are.na/fahila-mansuri-ddpbsjhwcvo/mind-travel" id="channel-url">
                 <h1 class="channel-title"></h1> <!-- The channel title will be inserted inside this h1. -->
             </a>
-            <!--<div class="channel-description"></div> 
-			
-			-->
-            <!-- Same here for the channel description. -->
-            <!--	<ul class="channel-owner channel-collaborator"></ul>  Owner and collaborators. -->
+         
         </section>
 
 
@@ -59,7 +55,7 @@
                     <div class="imboxnav">
                     </div>
 
-                    <p class="navtag">Sound
+                    <p class="navtag">Text
                     </p>
 
                     <div class="soundboxnav">
@@ -85,30 +81,36 @@
             <div class="topspace"></div>
 
 
-
-
-            <template id="link-block">
+   
+          
+          
+           <template id="link-block">
                 <li class="ticket">
                     <figure class="trial">
 
                         <figure class="link-block">
 
-                         
+                       
                             <a class="link">
                                 <p class="time-created"></p>
                                 <p class="time-updated"></p>
 
-                                <p class="link-title"></p>
+                                <p class="title"></p>
                             </a>
                             <figcaption class="description"></figcaption>
 
 
-
                         </figure>
                     </figure>
+                   
                 </li>
             </template>
 
+          
+    
+      
+
+           
 
 
 
@@ -117,7 +119,7 @@
                <!-- <h2 class="channel-count"></h2> --><!-- How many blocks. -->
                 <!-- All the channel “blocks” will be created as children, here. -->
                 <!-- You could move the classes to different section elements to separate the types! -->
-                <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
+                <ul id="image-grid" class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
                 </ul>
             </section>
 
@@ -129,21 +131,26 @@
             <!-- Images. -->
             <template id="image-block">
                 <li>
+                   
                     <figure class="imtrial">
                         <figure class="image-block">
 
 
                             <p class="time-created"></p> <p class="time-updated"></p>
 
-                            <a class="link">
-                                <p class="title"></p>
-                                <!--<p class="link-title"></p>-->
-                            </a>
-
-                            <figcaption class="description"></figcaption>
-
-
+                              
+                              
+                                <a class="link">     
+                                     <p class="link-title"></p>
+                                    <!-- <p class="title"></p>-->
+                                     
+                                     
+                                  <figcaption class="description"></figcaption>
+                      
+</a>
+  
                         </figure>
+                      
                     </figure>
                 </li>
             </template>
@@ -186,14 +193,39 @@
                 </li>
             </template>
 
+        <!-- Did anyone add PDFs? -->
+		<template id="pdf-block">
+			<li>
+			 <figure class="pdftrial">
+				<figure class="pdf-block">
+				<p class="time-created"></p>
+				<p class="time-updated"></p>
+					
+						
+						
+				
+					<a class="link"> <!-- PDF link inserts here. -->
+						<p class="link-title"></p> <!-- Repeats the block title. --><figcaption class="description"></figcaption>
+					</a>
+					
+					
+					
+					
+				</figure></figure>
+			</li>
+		</template>
 
         
         
 
         </div>
     </div>
+    
+    
 
 
+      
+    
 
 <!--TICKER TAPE PURE CSS TUTORIAL BY NICK SANTINI ON CODEPEN-->
 
@@ -201,9 +233,9 @@
 
 <div id="newsTicker"><p></p></div>
 
-<div class="content2">
+
   
-</div> 
+
 
 
 </body>
